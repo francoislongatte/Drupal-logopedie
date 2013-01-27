@@ -86,7 +86,7 @@
  */
 ?>
 	<header>
-            <h1><a href="<?php print $front_page; ?>"><?php print $site_name ?></a></h1>
+            <h1><a href="<?php print $front_page; ?>">Unité voix</a></h1>
             <form id="search" action="#">
                 <fieldset>
                     <input type="search" name="search" placeholder="rechercher">
@@ -115,16 +115,12 @@
         )); ?>
    </nav>
     <div>
+    <div>
             <section id="description">
            <?php if ($page['content']) :
 	           		print render($page['content']); ?>
 	       <?php endif; ?>
     		</section>
-    		<?php if ($page['sidebar_first']): ?>
-    		<section id="publications">
-	    		<?php print render($page['sidebar_first']); ?>
-    		</section>
-    		<?php endif; ?>
     		<?php if($page['footer']):
     			print render($page['footer']); ?>
     		<?php endif; ?>

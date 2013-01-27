@@ -3,8 +3,17 @@ description = le theme du site de la logopedie
 package = Core
 version = VERSION
 core = 7.x
+engine = phptemplate
 stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/main2.css
 
-scripts[] = modernizr-2.6.2.min.js
+scripts[] = js/modernizr-2.6.2.min.js
 
+regions[page_top] = Haut de page
+regions[help] = Aide
+regions[page_bottom] = Bas de page
+regions[content] = Contenu
+
+regions[menu] = Menu principal
+regions[sidebar_first] = Colonne laterale
+regions[footer] = Pied de page
